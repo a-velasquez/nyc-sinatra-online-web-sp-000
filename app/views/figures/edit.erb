@@ -1,7 +1,7 @@
-<h1>Please Fill Out Form to Edit <%= @figure.name %></h1>
+<h1>Please Fill Out Form <%= @figure.name %></h1>
 <form method="POST" action="/figures/<%= @figure.id %>">
   <input id="hidden" type="hidden" name="_method" value="patch">
-  <h2>Name:></h2><input type="text" name="figure[name]" id="figure_name" value="<%= @figure.name %>"><br><br>
+  <label><strong>Name:</strong></label><input type="text" name="figure[name]" id="figure_name" value="<%= @figure.name %>"><br><br>
 
   <label><strong>Title(s):</strong></label><br>
   <em>Choose from an Existing Title</em><br>
